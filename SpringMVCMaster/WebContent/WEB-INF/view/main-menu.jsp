@@ -8,5 +8,7 @@
 	
 	<body>
 		<h2>Spring MVC main menu page.</h2>
+		<hr>
+		<a href="showForm">Hello World form</a>
 	</body>
 </html>
