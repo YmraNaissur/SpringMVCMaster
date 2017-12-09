@@ -11,7 +11,9 @@
 		<hr>
 		<a href="showForm">Hello World form section 12</a>
 		<br />
-		<a href="showFormSec13">Hello World form section 13</a>
+		<a href="hello/showFormSec13">Hello World form section 13</a>
+		<br />
+		<a href="silly/showFormSec13">Silly section 13</a>
 		<br />
 	</body>
 </html>

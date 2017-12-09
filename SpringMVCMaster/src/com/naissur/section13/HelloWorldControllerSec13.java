@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldControllerSec13 {
 	// need a controller method to show initial HTML form
 	@RequestMapping("/showFormSec13")
