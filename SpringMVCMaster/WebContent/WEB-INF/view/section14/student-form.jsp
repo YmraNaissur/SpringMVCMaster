@@ -14,13 +14,23 @@
 			<br />
 			Country: 
 			<form:select path="country">
-				<!--
+				<%--
 				<form:option value="Russian Federation" label="Russian Federation" />
 				<form:option value="Ukraine" label="Ukraine" />
 				<form:option value="Kazakhstan" label="Kazakhstan" />
-				-->
+				--%>
 				<form:options items="${countryOptions}" />
 			</form:select>
+			<br />
+			Favorite Programming Language:
+			<br />
+			<%-- 
+			Java <form:radiobutton path="favoriteLang" value="Java" />
+			Python <form:radiobutton path="favoriteLang" value="Python" />
+			C# <form:radiobutton path="favoriteLang" value="C#" />
+			Ruby <form:radiobutton path="favoriteLang" value="Ruby" />
+			--%>
+			<form:radiobuttons path="favoriteLang" items="${student.favoriteLangOptions}" />
 			<br />
 			<input type="submit" value="Submit" />
 		</form:form>
