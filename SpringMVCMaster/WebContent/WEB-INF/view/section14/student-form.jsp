@@ -12,6 +12,16 @@
 			<br />
 			Last name: <form:input path="lastName" />
 			<br />
+			Country: 
+			<form:select path="country">
+				<!--
+				<form:option value="Russian Federation" label="Russian Federation" />
+				<form:option value="Ukraine" label="Ukraine" />
+				<form:option value="Kazakhstan" label="Kazakhstan" />
+				-->
+				<form:options items="${countryOptions}" />
+			</form:select>
+			<br />
 			<input type="submit" value="Submit" />
 		</form:form>
 	</body>

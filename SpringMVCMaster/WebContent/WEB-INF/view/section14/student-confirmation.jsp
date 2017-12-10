@@ -10,5 +10,7 @@
 	<body>
 		<h2>Section 14 - Student confirmation</h2>
 		The student is confirmed: ${student.firstName} ${student.lastName}.
+		<br />
+		Student's country code is ${student.country}.
 	</body>
 </html>
