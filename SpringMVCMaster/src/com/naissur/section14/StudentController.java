@@ -33,6 +33,7 @@ public class StudentController {
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student student) {
 		System.out.println("Student: " + student.getFirstName() + " " + student.getLastName());
+		System.out.println("Operating systems: " + student.getOperatingSystems());				
 		return "section14/student-confirmation";
 	}
 }

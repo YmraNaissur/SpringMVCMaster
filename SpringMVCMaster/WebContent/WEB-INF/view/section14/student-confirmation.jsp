@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,5 +16,11 @@
 		Student's country code is ${student.country}.
 		<br />
 		Student's favorite programming language is ${student.favoriteLang}.
+		<p>Operating systems:
+		<ul>
+			<c:forEach var="os" items="${student.operatingSystems}">
+				<li>${os}</li>
+			</c:forEach>
+		</ul>
 	</body>
 </html>

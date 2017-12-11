@@ -8,10 +8,16 @@
 	</head>
 	<body>
 		<form:form action="processForm" modelAttribute="student">
+		
+			<!-- form:input (text fields) exploration -->
+			
 			First name: <form:input path="firstName" />
 			<br />
 			Last name: <form:input path="lastName" />
 			<br />
+			
+			<!-- form:select (drop-down lists) exploration -->
+			
 			Country: 
 			<form:select path="country">
 				<%--
@@ -22,6 +28,9 @@
 				<form:options items="${countryOptions}" />
 			</form:select>
 			<br />
+			
+			<!-- form:radiobutton (radio buttons) exploration -->
+			
 			Favorite Programming Language:
 			<br />
 			<%-- 
@@ -32,6 +41,19 @@
 			--%>
 			<form:radiobuttons path="favoriteLang" items="${student.favoriteLangOptions}" />
 			<br />
+			
+			<!-- form:checkbox (check boxes) exploration -->
+			
+			Operating Systems:
+			<br />
+			<%--
+			Linux <form:checkbox path="operatingSystems" value="Linux" />
+			Max OS <form:checkbox path="operatingSystems" value="Mac OS" />
+			MS Windows <form:checkbox path="operatingSystems" value="MS Windows" />
+			--%>
+			<form:checkboxes path="operatingSystems" items="${student.operatingSystemsOptions}" />
+			<br />						
+			
 			<input type="submit" value="Submit" />
 		</form:form>
 	</body>
