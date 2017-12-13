@@ -16,5 +16,7 @@
 		<a href="silly/showFormSec13">Silly section 13</a>
 		<br />
 		<a href="section14/showForm">Student form</a>
+		<br />
+		<a href="section15/showForm">Customer form</a>
 	</body>
 </html>
